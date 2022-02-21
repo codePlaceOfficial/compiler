@@ -60,6 +60,9 @@ RUN apt-get install -y r-base
 # ruby
 RUN apt-get install -y ruby-full
 
+#修改utf-8编码
+ENV LANG C.UTF-8
+
 CMD ["/bin/zsh"]
 LABEL maintainer="codeplaceOfficial <codeplace@yeah.net>"
 LABEL version="0.2"
